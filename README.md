@@ -113,10 +113,20 @@ Distinct queries done on Aug 1st between 00:04:00 and 00:04:59: GET /1/queries/c
 The application will works fine as per the task, but as per my research this is not the efficient way to do the application run effectively because its taking a small time gape to get the record count this is because its quering all through the record in the dataframa which will increase everytime the record numbers increase.<br>
 As per my knowladge ELASTIC-SEARCH could be a perfect solution to make this functionality efficient if we use in the storage procedure.
 
+
+
+# System Design digram:
+
+ ![system_design_backend](https://user-images.githubusercontent.com/80528499/177852768-fd141860-64e7-4cf5-a0b2-8261290d41d9.JPG)
+
+# System Design Description:
+Here i used the AWS EC2 instance to host my application. <br>
+After creating the EC2 instance on AWS need to logon to the instance by using the IP address of the instance.<br>
+Then we ready to go with the instance by installing the Nginx the wsgi webserver and Gunicorn to communicate with the application and instance.<br>
+Also need to install all the application's dependencies the instance. Here we can use the loadbalancer feature to redirect and balance our requests to the application endpoint. 
+Finally the server configured with the DNS service and it will expose to all the users over the world to serve them throw internet.
+
+# Scalability:
+AWS or GCP provides the basic auto scalling feature to balance the getting requests and work on the server, but according to the service demand we can add vertical and horizontal scalling to the system .<br>
+Also for now we are dealing with a single service to serve in this application if we expanding our services we can implement the microservice architecture to the system.
 ## Thank You So Much for giving the time to evaluate the project
-
-
-
-
- 
- 
