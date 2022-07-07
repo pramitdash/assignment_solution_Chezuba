@@ -79,7 +79,7 @@ install the required dependencies like flask, pandas etc.<br>
 ## Dependencies:
  Install the flask framework by following commands:<br>
  ```
- pip install flask<br>
+ pip install flask
  ```
  Install pandas to re-implement its features to make our task complete<br>
  ```
@@ -110,8 +110,8 @@ Distinct queries done on Aug 3rd: GET /1/queries/count/2015-08-03: <br>
 Distinct queries done on Aug 1st between 00:04:00 and 00:04:59: GET /1/queries/count/2015-08-01 00:04: <br>
 
 # Summary:
-The application will works fine as per the task, but as per my research this is not the efficient way to do the application run effectively because its taking a small time gape to get the record count this is because its quering all through the record in the dataframa which will increase everytime the record numbers if increase.<br>
-As per my knoladge and i beleave that ELASTIC-SEARCH could be a perfect solution to make this functionality efficient.
+The application will works fine as per the task, but as per my research this is not the efficient way to do the application run effectively because its taking a small time gape to get the record count this is because its quering all through the record in the dataframa which will increase everytime the record numbers increase.<br>
+As per my knowladge ELASTIC-SEARCH could be a perfect solution to make this functionality efficient if we use in the storage procedure.
 
 ## Thank You So Much for giving the time to evaluate the project
 
